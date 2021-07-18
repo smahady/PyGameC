@@ -459,20 +459,20 @@ class Raphael(Character):
 # Animation cell: 112x65
 class SourCreamAndOnionPringles(Character):
   def __init__(self, thisScene):
-    super().__init__(thisScene,"sprites/nelsun_sprite.png" , 1232, 130) # change to sheet size
+    super().__init__(thisScene,"sprites/nelsun_sheet.png" , 1232, 130) # change to sheet size
     self.posX += 60
     self.posY += 60
 
 
 		# remove self.generateAnimationCycles()
 		# change Scene.K_ to Keys.K_
-    self.boundAction = Scene.WRAP
+
     self.loadAnimation(1232, 130, 112, 65)
     self.setAnimationSpeed(1000)
     self.playAnimation()
     self.dx = 10
     self.dy = 8	
-    self.boundAction = Scene.WRAP
+
     self.state = States.FALLING
 
 
