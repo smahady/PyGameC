@@ -468,7 +468,7 @@ class SourCreamAndOnionPringles(Character):
 		# change Scene.K_ to Keys.K_
 
     self.loadAnimation(1232, 130, 112, 65)
-    self.setAnimationSpeed(1000)
+    self.setAnimationSpeed(10)
     self.playAnimation()
     self.dx = 10
     self.dy = 8	
@@ -492,7 +492,7 @@ class SourCreamAndOnionPringles(Character):
 
   def jumpBehavior(self):
     self.startTimer = 50
-    self.dy = -6
+    self.dy = -8
     self.state = States.JUMP
   def update(self, offsetX, offsetY):
     super().update(offsetX, offsetY)
