@@ -602,9 +602,10 @@ class Window(Tk):
 		raphaelButton.pack()	
 		kamilleButton = Button(self, text="Kamille", command=self.Kamille)
 		kamilleButton.pack()
-		qingyunButton = Button(self, text="Qingyun", command=self.Kamille)
+		qingyunButton = Button(self, text="Qingyun", command=self.Qingyun)
 		qingyunButton.pack()										
 		self.mainloop()
+		
 
 	def Sean(self):
 		self.game.main = Sean(self.game)
