@@ -332,7 +332,6 @@ class RickAstley(Character):
     self.loadAnimation(176, 192, 88, 96)
     self.setAnimationSpeed(30)	
     self.playAnimation()
-    self.boundAction = Scene.WRAP
     self.state = States.FALLING
 
 
