@@ -492,7 +492,7 @@ class SourCreamAndOnionPringles(Character):
 
   def jumpBehavior(self):
     self.startTimer = 50
-    self.dy = -8
+    self.dy = -15
     self.state = States.JUMP
   def update(self, offsetX, offsetY):
     super().update(offsetX, offsetY)
