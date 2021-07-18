@@ -376,7 +376,6 @@ class Kamille(Character):
     self.posY = 70
     self.dx += 5
     self.dy += 5
-    self.boundAction = Scene.WRAP
 
 		# remove self.generateAnimationCycles()
 		# change Scene.K_ to Keys.K_
