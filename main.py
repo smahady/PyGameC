@@ -33,7 +33,7 @@ class Keys:
 
 class Camera():
 	def __init__(self, game):
-		self.scene = game
+		self.game = game
 
 	def follow(self, sprite):
 		self.sprite = sprite
@@ -275,7 +275,7 @@ class CheesePuff(Character):
 	def __init__(self, thisScene):
 		super().__init__(thisScene, "sprites/ethan_sheet.png", 400, 200)
 		self.posX = 150
-		self.y = 150
+		self.posY = 150
 
 		# remove self.generateAnimationCycles()
 		# change Scene.K_ to Keys.K_
@@ -324,7 +324,7 @@ class RickAstley(Character):
     super().__init__(thisScene, "sprites/henry_sheet.png", 176, 192)
     self.dx = 9
     self.posX = 50
-    self.y = 50
+    self.posY = 50
     self.dy = 9
 
 		# remove self.generateAnimationCycles()
@@ -374,7 +374,7 @@ class Kamille(Character):
   def __init__(self, thisScene):
     super().__init__(thisScene, "sprites/kamille_sheet.png", 320, 128)
     self.posX = 70
-    self.y = 70
+    self.posY = 70
     self.dx += 5
     self.dy += 5
     self.boundAction = Scene.WRAP
@@ -419,7 +419,7 @@ class Raphael(Character):
   def __init__(self, thisScene):
     super().__init__(thisScene,"sprites/raphael_sheet.png", 1232, 130)
     self.posX = 65
-    self.y = 65
+    self.posY = 65
     self.dx = 3
     self.dy = 3
     self.boundAction = Scene.WRAP
@@ -461,7 +461,7 @@ class SourCreamAndOnionPringles(Character):
   def __init__(self, thisScene):
     super().__init__(thisScene,"sprites/nelsun_sprite.png" , 1232, 130) # change to sheet size
     self.posX += 60
-    self.y += 60
+    self.posY += 60
 
 
 		# remove self.generateAnimationCycles()
@@ -512,7 +512,7 @@ class Sophie(Character):
   def __init__(self, thisScene):
     super().__init__(thisScene, "sprites/sophie_sheet.png", 144, 64)
     self.posX += 75
-    self.y += 50
+    self.posY += 50
     self.dx = 1
     self.boundAction = Scene.WRAP
 
