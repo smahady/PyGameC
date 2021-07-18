@@ -291,13 +291,13 @@ class CheesePuff(Character):
 
 
 	def walkBehavior(self):
-		if self.game.keysDown[KKeyss.K_RIGHT]:
+		if self.game.keysDown[Keys.K_RIGHT]:
 			self.facing = 0
 			self.setCurrentCycle(0)
 			self.playAnimation()
 			self.dx = 8
 			self.state = States.WALK
-		elif self.game.keysDown[KKeyss.K_LEFT]:
+		elif self.game.keysDown[Keys.K_LEFT]:
 			self.facing = 1
 			self.setCurrentCycle(1)
 			self.playAnimation()
@@ -491,7 +491,7 @@ class SourCreamAndOnionPringles(Character):
       self.state = States.WALK
 
   def jumpBehavior(self):
-    self.timer = 50
+    self.stateTimer = 50
     self.dy = -15
     self.state = States.JUMP
   def update(self, offsetX, offsetY):
